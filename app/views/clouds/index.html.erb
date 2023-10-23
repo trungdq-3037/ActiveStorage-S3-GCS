@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Clouds</h1>
+
+<div id="clouds">
+  <% @clouds.each do |cloud| %>
+    <%= render cloud %>
+    <p>
+      <%= link_to "Show this cloud", cloud %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cloud", new_cloud_path %>

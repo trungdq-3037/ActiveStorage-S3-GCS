@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cloud %>
+
+<div>
+  <%= link_to "Edit this cloud", edit_cloud_path(@cloud) %> |
+  <%= link_to "Back to clouds", clouds_path %>
+
+  <%= button_to "Destroy this cloud", @cloud, method: :delete %>
+</div>
