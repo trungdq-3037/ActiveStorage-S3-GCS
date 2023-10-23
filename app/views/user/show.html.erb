@@ -1,0 +1,20 @@
+<div>
+username: <%= @user.name%>
+</div>
+
+<%# <%byebug%> 
+
+<div>
+<% if @user.avatar.attached? %> 
+  <%= image_tag @user.avatar,  alt:"Images" %>
+<%else%>
+    No image
+<%end%>
+
+</div>
+
+
+<div>
+  <%= button_to "Back index", user_index_path , method: "get"  %>
+
+</div>

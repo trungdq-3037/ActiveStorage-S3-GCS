@@ -1,0 +1,26 @@
+<h1> Index pages </h1>
+
+
+<%=button_to 'Create user' , new_user_path, method: :get %>
+
+<% if !@users.nil?  %>
+      <% @users.each do |user| %>
+         <div> 
+            ========================== <br>
+           <div>  <%= user.name %> </div>
+
+            <div>
+                  <% if user.avatar.attached? %>
+                        <%=image_tag user.avatar %>
+                  <% else %>
+                        no avatar
+                   <% end %>
+ 
+             </div>
+
+
+         <div>
+
+      <%end%>
+
+<%end%>

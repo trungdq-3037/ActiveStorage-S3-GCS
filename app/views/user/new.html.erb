@@ -1,0 +1,17 @@
+<h1> Create new user </h1>
+
+<%= form_with scope: :user, url: '/user'  do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :avatar %>
+  <%= form.file_field :avatar %>
+
+  <%= form.submit 'Create User' %>
+<% end %>
+
+
+
+
+<br>
+<%= button_to "back to list user", user_index_path, method: :get %>

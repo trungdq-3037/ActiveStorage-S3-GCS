@@ -7,11 +7,12 @@ default: &default
   password: mysecretpassword
   host: localhost
   port: 5432
+  database: storage
 
 development:
   <<: *default
-  database: sns_server
+  database: storage
 
 production:
   <<: *default
-  database: sns_server
+  database: storage
