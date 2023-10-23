@@ -1,0 +1,26 @@
+<h1> Index pages </h1>
+
+
+<%=button_to 'Create document' , new_document_path, method: :get %>
+
+<% if !@documents.nil?  %>
+      <% @documents.each do |document| %>
+         <div> 
+            ========================== <br>
+           <div>  <%= document.name %> </div>
+
+            <div>
+                  <% if document.file.attached? %>
+                        <%=image_tag document.file %>
+                  <% else %>
+                        no files
+                   <% end %>
+ 
+             </div>
+
+
+         <div>
+
+      <%end%>
+
+<%end%>

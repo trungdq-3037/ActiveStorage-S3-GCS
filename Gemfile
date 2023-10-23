@@ -73,4 +73,4 @@ gem 'byebug'
 
 gem 'aws-sdk-s3' # for Amazon S3 support
 gem 'image_processing' # for image processing support
-gem 'dotenv'
+gem 'dotenv-rails'

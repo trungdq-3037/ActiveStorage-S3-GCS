@@ -1,0 +1,10 @@
+<!-- app/views/documents/new.html.erb -->
+<%= form_with  scope: :document, url: '/document'  do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+
+  <%= form.submit 'Upload' %>
+<% end %>

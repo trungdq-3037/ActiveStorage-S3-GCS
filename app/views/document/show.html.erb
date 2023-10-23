@@ -1,0 +1,15 @@
+<h1> Show document  </h1>
+
+<h3> Doc name: 
+    <%= @document.name%>
+</h3>
+
+
+<h3> Images attach below </h3>
+
+
+<% if @document.file.attached?%>
+    <%= image_tag @document.file %>
+<%else%>
+    No attached
+<%end%>
